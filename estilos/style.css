@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-primaria: #FF204E;
+    --cor-secundaria: #A0153E;
+    --cor-terciaria: #485F73;
+    --cor-fundo: #F2F2F2;
+    --cor-fonte: #00224D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--cor-fundo);
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    color: var(--cor-fonte);
+}
+
+.cabecalho img {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--cor-fonte);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-fonte);
+    border-radius: 20px;
+    width: 350px;
+    height: 500px;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-fonte);
+}
+
+#output span {
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-bnt button {
+    border: 2px solid var(--cor-fonte);
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cor-fonte);
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-bnt button:hover {
+    border: 2px solid var(--cor-secundaria);
+    transition: 0.5s all;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: var(--cor-primaria);
+    color: var(--cor-fonte);
+}
+
+.rodape h3 {
+    font-size: 16px;
+}
+
+.icons ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--cor-fonte);
+}
+
+.icons ion-icon:hover {
+    color: var(--cor-secundaria);
+}
